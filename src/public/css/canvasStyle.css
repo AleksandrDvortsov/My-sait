@@ -1,0 +1,11 @@
+body{
+    background: #66CDAA;
+}
+#canvas{
+    width: 750px;
+    height: 500px;
+    background: #FFCF00;
+}
+#myCanvas{
+    background: dodgerblue;
+}

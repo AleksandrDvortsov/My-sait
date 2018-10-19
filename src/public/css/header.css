@@ -1,0 +1,135 @@
+.header{
+    width: 100%;
+    height: 100px;
+    min-width: 600px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+    padding: 21px 10px;
+    background-color: lightblue;
+    background-image: linear-gradient(white,white,white,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,#0066ff);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.header a{
+    font-size: 20px;
+    line-height: 50px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    color: darkslategrey;
+}
+a.header-title {
+    position: absolute;
+    left: 10px;
+    top: 21px;
+    border-bottom-left-radius: 50px;
+    font-size: 45px;
+    font-weight: bold;
+}
+.header-menu {
+    position: absolute;
+    left: 225px;
+    top: 42px;
+}
+.header-menu a{
+    background-image: linear-gradient(lightblue, #4fabc9);
+    margin-left: 2px;
+}
+.header a.home {
+    background:#4fabc9;
+    color: white;
+}
+.header-menu a:hover,.header a.home:hover {
+    background-image: linear-gradient(lightblue,#2a7189);
+    color: #c4e2ed;
+}
+/*////////////////////*/
+
+.popUp-windowMenu {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(255, 171, 201, 0.5); /* Black w/ opacity */
+}
+
+.popUpWindow-contentMenu {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 5px solid #888;
+    width: 90%;
+    height: fit-content;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 1.5s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {
+        top: -100px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -100px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.header-popUpMenu {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 2px 16px;
+    background-color: pink;
+    color: darkslategrey;
+    height: 40px;
+}
+
+.popUpWindow-contentMenu {
+    border-radius: 45px;
+}
+
+.body-popUpMenu {
+    padding: 2px 16px;
+    background-color: rgba(255,192,203, 0.2);
+}
+
+.close3 {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close3:hover,
+.close3:focus {
+    color: palevioletred;
+    text-decoration: none;
+    cursor: pointer;
+}
+

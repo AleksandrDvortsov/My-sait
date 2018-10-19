@@ -1,0 +1,238 @@
+.new {
+    /*display: none;*/
+    border: 5px solid white;
+    border-radius: 50px;
+    flex: 2.0;
+    background-image: linear-gradient(#3366ff, #0066ff, #0099ff, #80ccff, #80ccff, #80ccff, lightblue);
+    align-items: center;
+}
+
+.topNew-title {
+    padding: 5px;
+    margin: 5px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.new-title {
+    padding: 5px;
+    margin: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+div.news-menu > a:link, div.news-menu > a:visited {
+    margin: 5px;
+    padding: 14px 25px;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    width: 250px;
+}
+
+div.news-menu > a:hover, div.news-menu > a:active {
+    background-color: #4fabc9;
+}
+
+/*//// B U T T O N ///!**/
+#floating-button {
+    width: 160px;
+    height: 55px;
+    border-radius: 10%;
+    background: #4fabc9;
+    position: fixed;
+    bottom: 10px;
+    left: 5px;
+    cursor: pointer;
+    box-shadow: 5px 5px 20px #666;
+}
+
+.plus {
+    color: white;
+    position: absolute;
+    top: 0;
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    line-height: 55px;
+    font-size: 38px;
+    font-weight: 300;
+    animation: plus-out 0.3s;
+    transition: all 0.3s;
+}
+
+#container-floating:hover .plus {
+    animation: plus-in 0.15s linear;
+    animation-fill-mode: forwards;
+}
+
+.edit {
+    position: absolute;
+    top: 0;
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    opacity: 0;
+    margin: auto;
+}
+
+#container-floating:hover .edit {
+    animation: edit-in 0.2s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes edit-in {
+    from {
+        opacity: 0;
+        transform: rotateZ(-360deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes edit-out {
+    from {
+        opacity: 1;
+        transform: rotateZ(0deg);
+    }
+    to {
+        opacity: 0;
+        transform: rotateZ(-360deg);
+    }
+}
+
+@keyframes plus-in {
+    from {
+        opacity: 1;
+        transform: rotateZ(0deg);
+    }
+    to {
+        opacity: 0;
+        transform: rotateZ(180deg);
+    }
+}
+
+@keyframes plus-out {
+    from {
+        opacity: 0;
+        transform: rotateZ(180deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes bounce-nds {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes bounce-out-nds {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+.popUp-windowNews {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    padding-top: 50px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(79, 171, 201, 0.5); /* Black w/ opacity */
+}
+
+.popUpWindow-contentNews {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 5px solid #888;
+    width: 90%;
+    height: fit-content;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 1.5s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {
+        top: -100px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -100px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.header-popUpNews {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 2px 16px;
+    background-color: #4fabc9;
+    color: darkslategrey;
+    height: 40px;
+}
+
+.popUpWindow-contentNews {
+    border-radius: 45px;
+}
+
+.body-popUpNews {
+    padding: 2px 16px;
+    background-color: rgba(135,206,250, 0.2);
+}
+
+.close2 {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>new Layout</title>
+</head>
+<body>
+
+{% block css %}
+{% endblock css %}
+
+<div class="site-wrapper">
+
+    <div class="header">
+        {% block header %}
+        {% endblock header %}
+    </div>
+    <div class="middle-section">
+        <div class="navigate">
+            {% block navigate %}
+            {% endblock navigate %}
+        </div>
+        <div class="main">
+            {% block main %}
+            {% endblock main %}
+        </div>
+        <div class="new">
+            {% block new %}
+            {% endblock new %}
+        </div>
+    </div>
+    <div class="footer">
+        {% block footer %}
+        {% endblock footer %}
+    </div>
+</div>
+
+<script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script src="windowListener.js"></script>
+<script src="menuBlock.js"></script>
+
+</body>
+</html>

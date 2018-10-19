@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "URW Chancery L", cursive; /* шрифты*/
+    font-size: 18px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.site-wrapper {
+    width: 100%;
+    height: 100%;
+    min-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.middle-section {
+    min-width: 600px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    /*max-height: 100%;*/
+    flex: 1 1 auto;
+    color: darkslategrey;
+}
+
+#myBtn, #myBtnHeader {
+    background: transparent;
+    border: none !important;
+    font-size: 0;
+}
+
+#container-floating {
+    visibility: hidden;
+
+}
+
+@media screen and (max-width: 1080px) {
+    .middle-section {
+        font-size: 14px;
+        flex-direction: column;
+    }
+
+    .main {
+        height: 600px;
+    }
+
+    .navigate {
+        background: #FFCF00;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    /*скрыть новости. Оставить только link и main*/
+    /*/////////////////////////////////////////////!*    !*!*B U T T O N*!*!*/
+    #myBtnHeader {
+        font-family: "URW Chancery L", cursive;
+
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        left: 35px;
+        top: 55px;
+
+        background-image:url("../img/menu.png");
+    }
+
+    #myBtn {
+        border-radius: 10px;
+        font-family: "URW Chancery L", cursive;
+        width: 25%;
+        height: 35px;
+        background: #546e7a;
+        border: solid;
+        font-size: 10px;
+        background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+        animation: slidebg 10s linear infinite;
+        cursor: pointer;
+    }
+
+    @keyframes slidebg {
+        to {
+            background-position: 50vw;
+        }
+    }
+
+    #container-floating {
+        visibility: visible;
+    }
+
+    /*B U T T O N*/
+    /*/////////////////////////////////////////////!**/
+    .linkBig,.header-menu,.new {
+        display: none;
+    }
+    .header-title{
+       margin-left: 65px;
+    }
+
+    .main {
+        width: 100vw;
+        background: #aa0000;
+    }
+}
+
+
+

@@ -1,0 +1,161 @@
+{% extends "hwLayout.html" %}
+
+{% block css %}
+<link rel="stylesheet" href="../public/css/general.css">
+<link rel="stylesheet" href="../public/css/newscss/header.css">
+<link rel="stylesheet" href="../public/css/navigate.css">
+<link rel="stylesheet" href="../public/css/newscss/main.css">
+<link rel="stylesheet" href="../public/css/newscss/news.css">
+<link rel="stylesheet" href="../public/css/footer.css">
+<link rel="stylesheet" href="../public/css/linkstyle.css">
+{% endblock %}
+
+{% block header %}
+<p>
+    <input type="button" id="myBtnHeader" value="All News Menu">
+</p>
+
+<a class="header-title">News Title</a>
+<div class="header-menu">
+    <a class="home" href="hwIndex.html">H O M E</a>
+    <a href="hwIndex2.html">V I D E O</a>
+    <a href="hwIndex3.html">N E W S</a>
+</div>
+{% endblock %}
+
+{% block navigate %}
+<div class="navigate-title">News Navigate Title
+</div>
+<div class="linkBig">
+    <p class="linkStyle">
+        <a href="">NEWS 1</a></p>
+    <p class="linkStyle">
+        <a href="">NEWS 2</a>
+    </p>
+</div>
+<p>
+    <input type="button" id="myBtn" value="All News Link">
+</p>
+{% endblock %}
+
+{% block main %}
+<div class="main-title">News Main Title</div>
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<div class="main-menu" style="flex-direction: row;">
+    <div class="main-block1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio
+        fugiat
+        inventore iure sint? Amet consequatur earum ipsam tempora vero!
+    </div>
+    <div class="main-block2">Aliquam assumenda blanditiis delectus enim id illo molestiae mollitia non nulla
+        porro quas quasi, saepe suscipit tenetur ullam unde voluptatibus!
+    </div>
+    <div class="main-block3">Aliquam assumenda blanditiis delectus enim id illo molestiae mollitia non nulla
+        porro quas quasi, saepe suscipit tenetur ullam unde voluptatibus!
+    </div>
+</div>
+{% endblock %}
+
+{% block new %}
+<div class="topNew-title">Top News</div>
+<div class="news-menu">
+    <a href="#topNesw" class="news-menuLink">TopNews</a>
+</div>
+<div class="new-title">N E W S</div>
+<div class="news-menu">
+    <a href="#Nesw" class="news-menuLink">News 1</a>
+    <a href="#Nesw" class="news-menuLink">News 2</a>
+    <a href="#Nesw" class="news-menuLink">News 2</a>
+    <a href="#Nesw" class="news-menuLink">News 2</a>
+    <a href="#Nesw" class="news-menuLink">News 2</a>
+    <a href="#Nesw" class="news-menuLink">News 2</a>
+</div>
+{% endblock %}
+
+{% block footer %}
+<div class="footer-menu">
+    <p style="color: darkslategrey;">© 2002–2018 Dvortsov Aleksandr. You can contact us by mail: xz@gmail.com
+        888</p>
+</div>
+
+<!--window link-->
+
+<div id="myWindow" class="popUp-window">
+    <div class="popUpWindow-content">
+        <div class="header-popUp">
+            <span class="close">&times;</span>
+            <h2>All News Links</h2>
+        </div>
+        <div class="body-popUp">
+            <p class="linkStyleLink">
+                <a class="custom" href="">News 1</a>
+            </p>
+            <p class="linkStyleLink">
+                <a class="custom" href="">News 2</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!--window news-->
+
+<div id="myWindowNews" class="popUp-windowNews">
+    <div class="popUpWindow-contentNews">
+        <div class="header-popUpNews">
+            <span class="close2">&times;</span>
+            <h2>All News</h2>
+        </div>
+        <div class="body-popUpNews">
+            <p class="linkStyleNews">
+                <a class="custom" href="">News 1</a>
+            </p>
+            <p class="linkStyleNews">
+                <a class="custom" href="">News 2</a>
+            </p>
+            <p class="linkStyleNews">
+                <a class="custom" href="">News 3</a>
+            </p>
+
+        </div>
+    </div>
+</div>
+
+<!--window menu-->
+
+<div id="nemuWindow" class="popUp-windowMenu">
+    <div class="popUpWindow-contentMenu">
+        <div class="header-popUpMenu">
+            <span class="close3">&times;</span>
+            <h2>All News Menu</h2>
+        </div>
+        <div class="body-popUpMenu">
+            <p class="linkStyleMenu">
+                <a class="custom" href="hwIndex.html">H O M E</a>
+            </p>
+            <p class="linkStyleMenu">
+                <a class="custom" href="hwIndex2.html">V I D E O</a>
+            </p>
+            <p class="linkStyleMenu">
+                <a class="custom" href="hwIndex3.html">N E W S</a>
+            </p>
+
+        </div>
+    </div>
+</div>
+
+<!--B T N   N E W S-->
+
+<div id="container-floating">
+    <div id="floating-button" onclick="newmail()">
+        <p class="plus">N E W S</p>
+        <img class="edit"
+             src="https://image.flaticon.com/icons/svg/254/254025.svg"
+             width="50px" height="50px">
+    </div>
+</div>
+{% endblock %}
+
+<!--<script-->
+<!--src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">-->
+<!--</script>-->
+<!--<script src="windowListener.js"></script>-->
+<!--<script src="menuBlock.js"></script>-->

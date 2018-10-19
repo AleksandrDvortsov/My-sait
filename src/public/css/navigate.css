@@ -1,0 +1,28 @@
+.navigate{
+    border: 5px solid white;
+    border-radius: 50px;
+    flex: 1.5;
+    background-image: linear-gradient(#3366ff,#0066ff,#0099ff,#80ccff,#80ccff,#80ccff,lightblue);
+}
+.navigate > a {
+    background:rgba(0, 0, 0,0);
+    color: white;
+    padding: 14px 25px;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+}
+.navigate > a:hover,.navigate > a:active {
+    background-color: #4fabc9;
+}
+.navigate-title{
+    padding: 5px;
+    margin: 5px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.navigate-link > a {
+    background: #FFCF00;
+}

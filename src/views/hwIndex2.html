@@ -1,0 +1,155 @@
+{% extends "hwLayout.html" %}
+
+{% block css %}
+<link rel="stylesheet" href="../public/css/general.css">
+
+<link rel="stylesheet" href="../public/css/videocss/header.css">
+
+<link rel="stylesheet" href="../public/css/navigate.css">
+<link rel="stylesheet" href="../public/css/main.css">
+<link rel="stylesheet" href="../public/css/videocss/news.css">
+<link rel="stylesheet" href="../public/css/footer.css">
+<link rel="stylesheet" href="../public/css/linkstyle.css">
+{% endblock %}
+
+{% block header %}
+<p>
+    <input type="button" id="myBtnHeader" value="All XZ Menu">
+</p>
+
+<a class="header-title">Video Title</a>
+<div class="header-menu">
+    <a class="home" href="hwIndex.html">H O M E</a>
+    <a href="hwIndex2.html">V I D E O</a>
+    <a href="hwIndex3.html">N E W S</a>
+</div>
+{% endblock %}
+
+{% block navigate %}
+<div class="navigate-title">Video Navigate Title
+</div>
+<div class="linkBig">
+    <p class="linkStyle">
+        <a href="">Video 1</a></p>
+    <p class="linkStyle">
+        <a href="">Video 2</a>
+    </p>
+</div>
+<p>
+    <input type="button" id="myBtn" value="All Video Link">
+</p>
+{% endblock %}
+
+{% block main %}
+<div class="main-title">Video Main Title</div>
+<div class="main-menu">
+    <div class="gallery">
+        <div class="gallery">
+            <video style="width: 100%" height="100%"
+                   poster="http://corrupt-system.de/assets/media/sintel/sintel-trailer.jpg" controls preload="none">
+                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+                        type="video/mp4"/>
+            </video>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block new %}
+<div class="topNew-title">Top Video</div>
+<div class="news-menu">
+    <a href="#topNesw" class="news-menuLink">Video</a>
+</div>
+<div class="new-title">V I D E O</div>
+<div class="news-menu">
+    <a href="#Nesw" class="news-menuLink">Video 1</a>
+    <a href="#Nesw" class="news-menuLink">Video 2</a>
+    <a href="#Nesw" class="news-menuLink">Video 2</a>
+    <a href="#Nesw" class="news-menuLink">Video 2</a>
+    <a href="#Nesw" class="news-menuLink">Video 2</a>
+    <a href="#Nesw" class="news-menuLink">Video 2</a>
+</div>
+{% endblock %}
+
+{% block footer %}
+<div class="footer-menu">
+    <p style="color: darkslategrey;">© 2002–2018 Dvortsov Aleksandr. You can contact us by mail: xz@gmail.com
+        888</p>
+</div>
+
+<!--window link-->
+
+<div id="myWindow" class="popUp-window">
+    <div class="popUpWindow-content">
+        <div class="header-popUp">
+            <span class="close">&times;</span>
+            <h2>All Video Links</h2>
+        </div>
+        <div class="body-popUp">
+            <p class="linkStyleLink">
+                <a class="custom" href="">Video 1</a>
+            </p>
+            <p class="linkStyleLink">
+                <a class="custom" href="">Video 2</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!--window news-->
+
+<div id="myWindowNews" class="popUp-windowNews">
+    <div class="popUpWindow-contentNews">
+        <div class="header-popUpNews">
+            <span class="close2">&times;</span>
+            <h2>All Video</h2>
+        </div>
+        <div class="body-popUpNews">
+            <p class="linkStyleNews">
+                <a class="custom" href="">Video 1</a>
+            </p>
+            <p class="linkStyleNews">
+                <a class="custom" href="">Video 2</a>
+            </p>
+            <p class="linkStyleNews">
+                <a class="custom" href="">Video 3</a>
+            </p>
+
+        </div>
+    </div>
+</div>
+
+<!--window menu-->
+
+<div id="nemuWindow" class="popUp-windowMenu">
+    <div class="popUpWindow-contentMenu">
+        <div class="header-popUpMenu">
+            <span class="close3">&times;</span>
+            <h2>All Video Menu</h2>
+        </div>
+        <div class="body-popUpMenu">
+            <p class="linkStyleMenu">
+                <a class="custom" href="hwIndex.html">H O M E</a>
+            </p>
+            <p class="linkStyleMenu">
+                <a class="custom" href="hwIndex2.html">V I D E O</a>
+            </p>
+            <p class="linkStyleMenu">
+                <a class="custom" href="hwIndex3.html">N E W S</a>
+            </p>
+
+        </div>
+    </div>
+</div>
+
+<!--B T N   N E W S-->
+
+<div id="container-floating">
+    <div id="floating-button" onclick="newmail()">
+        <p class="plus">V I D E O</p>
+        <img class="edit"
+             src="https://image.flaticon.com/icons/svg/179/179346.svg"
+             width="50px" height="50px">
+    </div>
+</div>
+{% endblock %}

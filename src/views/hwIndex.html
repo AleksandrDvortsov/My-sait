@@ -1,0 +1,160 @@
+{% extends "hwLayout.html" %}
+
+{% block css %}
+<link rel="stylesheet" href="../public/css/general.css">
+<link rel="stylesheet" href="../public/css/header.css">
+<link rel="stylesheet" href="../public/css/navigate.css">
+<link rel="stylesheet" href="../public/css/main.css">
+<link rel="stylesheet" href="../public/css/news.css">
+<link rel="stylesheet" href="../public/css/footer.css">
+<link rel="stylesheet" href="../public/css/linkstyle.css">
+{% endblock %}
+
+{% block header %}
+<p>
+    <input type="button" id="myBtnHeader" value="All XZ Menu">
+</p>
+
+<a class="header-title">XZ Title</a>
+<div class="header-menu">
+    <a class="home" href="hwIndex.html">H O M E</a>
+    <a href="hwIndex2.html">V I D E O</a>
+    <a href="hwIndex3.html">N E W S</a>
+</div>
+{% endblock %}
+
+{% block navigate %}
+<div class="navigate-title">XZ Navigate Title
+</div>
+<div class="linkBig">
+    <p class="linkStyle">
+        <a href="">XZ 1</a></p>
+    <p class="linkStyle">
+        <a href="">XZ 2</a>
+    </p>
+</div>
+<p>
+    <input type="button" id="myBtn" value="All XZ Link">
+</p>
+{% endblock %}
+
+{% block main %}
+<div class="main-title">XZ Main Title</div>
+<div class="main-menu">
+    <div class="main-block1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio
+        fugiat
+        inventore iure sint? Amet consequatur earum ipsam tempora vero!
+    </div>
+    <div class="main-block2">Aliquam assumenda blanditiis delectus enim id illo molestiae mollitia non nulla
+        porro quas quasi, saepe suscipit tenetur ullam unde voluptatibus!
+    </div>
+    <div class="main-block3">Aliquam assumenda blanditiis delectus enim id illo molestiae mollitia non nulla
+        porro quas quasi, saepe suscipit tenetur ullam unde voluptatibus!
+    </div>
+</div>
+{% endblock %}
+
+{% block new %}
+<div class="topNew-title">Top XZ</div>
+<div class="news-menu">
+    <a href="#topNesw" class="news-menuLink">TopXz</a>
+</div>
+<div class="new-title">X Z</div>
+<div class="news-menu">
+    <a href="#Nesw" class="news-menuLink">Xz 1</a>
+    <a href="#Nesw" class="news-menuLink">Xz 2</a>
+    <a href="#Nesw" class="news-menuLink">Xz 2</a>
+    <a href="#Nesw" class="news-menuLink">Xz 2</a>
+    <a href="#Nesw" class="news-menuLink">Xz 2</a>
+    <a href="#Nesw" class="news-menuLink">Xz 2</a>
+</div>
+{% endblock %}
+
+{% block footer %}
+<div class="footer-menu">
+    <p style="color: darkslategrey;">© 2002–2018 Dvortsov Aleksandr. You can contact us by mail: xz@gmail.com
+        888</p>
+</div>
+
+<!--window link-->
+
+<div id="myWindow" class="popUp-window">
+    <div class="popUpWindow-content">
+        <div class="header-popUp">
+            <span class="close">&times;</span>
+            <h2>All XZ Links</h2>
+        </div>
+        <div class="body-popUp">
+            <p class="linkStyleLink">
+                <a class="custom" href="">XZ 1</a>
+            </p>
+            <p class="linkStyleLink">
+                <a class="custom" href="">XZ 2</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!--window news-->
+
+<div id="myWindowNews" class="popUp-windowNews">
+    <div class="popUpWindow-contentNews">
+        <div class="header-popUpNews">
+            <span class="close2">&times;</span>
+            <h2>All XZ</h2>
+        </div>
+        <div class="body-popUpNews">
+            <p class="linkStyleNews">
+                <a class="custom" href="">XZ 1</a>
+            </p>
+            <p class="linkStyleNews">
+                <a class="custom" href="">XZ 2</a>
+            </p>
+            <p class="linkStyleNews">
+                <a class="custom" href="">XZ 3</a>
+            </p>
+
+        </div>
+    </div>
+</div>
+
+<!--window menu-->
+
+<div id="nemuWindow" class="popUp-windowMenu">
+    <div class="popUpWindow-contentMenu">
+        <div class="header-popUpMenu">
+            <span class="close3">&times;</span>
+            <h2>All XZ Menu</h2>
+        </div>
+        <div class="body-popUpMenu">
+            <p class="linkStyleMenu">
+                <a class="custom" href="hwIndex.html">H O M E</a>
+            </p>
+            <p class="linkStyleMenu">
+                <a class="custom" href="hwIndex2.html">V I D E O</a>
+            </p>
+            <p class="linkStyleMenu">
+                <a class="custom" href="hwIndex3.html">N E W S</a>
+            </p>
+
+        </div>
+    </div>
+</div>
+
+<!--B T N   N E W S-->
+
+<div id="container-floating">
+    <div id="floating-button" onclick="newmail()">
+        <p class="plus">X Z</p>
+        <img class="edit"
+             src="https://image.flaticon.com/icons/svg/906/906794.svg"
+             width="50px" height="50px">
+    </div>
+</div>
+{% endblock %}
+
+<!--<script-->
+<!--src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">-->
+<!--</script>-->
+<!--<script src="windowListener.js"></script>-->
+<!--<script src="menuBlock.js"></script>-->
